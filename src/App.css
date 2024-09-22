@@ -1,0 +1,93 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  animation: fadeIn 1s ease;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.input-box {
+  width: 60%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.submit-btn {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.dropdown {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.response-data {
+  margin-top: 1.5rem;
+  animation: slideUp 0.5s ease;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.response-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.response-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.response-table td:first-child {
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
