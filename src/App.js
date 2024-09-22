@@ -12,7 +12,7 @@ function App() {
         setError('');
         try {
             const parsedData = JSON.parse(jsonInput);
-            const res = await fetch('bhfl-backend-alpha.vercel.app/bfhl', { // Update with your backend URL
+            const res = await fetch('https://bhfl-backend-alpha.vercel.app/bfhl', { // Update with your backend URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function App() {
     const handleGetRequest = async () => {
         setError('');
         try {
-            const res = await fetch('bhfl-backend-alpha.vercel.app/bfhl', { // Update with your backend URL
+            const res = await fetch('https://bhfl-backend-alpha.vercel.app/bfhl', { // Update with your backend URL
                 method: 'GET',
             });
 
